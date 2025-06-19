@@ -65,7 +65,7 @@ export default function VideoPlayerPage() {
 
         <div className="aspect-video w-full bg-black rounded-lg overflow-hidden mb-6">
           <video
-            src={video.video_url}
+            src={video.video_url || video.url}
             controls
             className="w-full h-full"
             poster={video.thumbnail}
